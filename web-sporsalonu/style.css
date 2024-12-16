@@ -1,0 +1,139 @@
+/* Genel Stil */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5dc; /* Krem rengi arka plan */
+    color: #013220; /* Koyu yeşil yazı rengi */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Tasarımı */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #f5f5dc; /* Koyu yeşil zemin */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f5f5dc !important; /* Krem rengi yazı rengi */
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    color: #f5f5dc !important; /* Krem rengi link yazıları */
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d9d9c7 !important; /* Daha açık krem hover rengi */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.nav-link.active {
+    color: #fff !important;
+    font-weight: bold;
+    border-bottom: 2px solid #f5f5dc;
+}
+
+/* Footer Tasarımı */
+footer {
+    background: #f5f5dc; /* Koyu yeşil footer zemin */
+    color: #f5f5dc; /* Krem rengi yazılar */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #f5f5dc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer a:hover {
+    color: #d9d9c7;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+/* Anasayfa İçerik Alanı */
+main.container {
+    background: #fff; /* Beyaz içerik kutusu */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    color: #013220; /* Koyu yeşil yazılar */
+}
+
+/* Butonlar */
+.btn {
+    border-radius: 25px;
+    background: #013220; /* Koyu yeşil buton */
+    color: #f5f5dc; /* Krem rengi yazılar */
+    transition: all 0.3s ease;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background: #026b38; /* Daha açık yeşil hover rengi */
+    transform: scale(1.05);
+}
+
+/* Form Alanları */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #013220;
+    box-shadow: 0 0 8px rgba(1, 50, 32, 0.5);
+    outline: none;
+}
+
+/* Kart Tasarımı */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
